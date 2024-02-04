@@ -5,7 +5,6 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Main />} />
-      // 기타 라우트 설정
     </Routes>
   );
 }
