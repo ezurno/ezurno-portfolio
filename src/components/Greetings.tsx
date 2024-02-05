@@ -37,7 +37,7 @@ export default function Greetings() {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="h-full w-full tracking-tighter px-8 py-8 xl:px-48 font-bold text-2xl xl:text-6xl gap-2 flex flex-col xl:flex-row justify-between items-center"
+      className="h-full w-full tracking-tighter px-8 py-8 xl:px-24 font-bold text-2xl xl:text-6xl gap-2 flex flex-col xl:flex-row justify-between items-center"
     >
       <div className="relative z-20">
         <motion.h2

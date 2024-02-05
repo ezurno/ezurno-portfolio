@@ -22,7 +22,7 @@ export default function TimeLine() {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="h-fit w-full tracking-tighter px-8 py-8 xl:px-48 gap-2 flex flex-col justify-start items-start"
+      className="h-fit w-full tracking-tighter px-8 py-2 xl:px-24 gap-2 flex flex-col justify-start items-start"
     >
       <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-4xl">
         TIME LINE

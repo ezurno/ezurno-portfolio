@@ -3,6 +3,8 @@ import "../css/index.css";
 import Box from "../components/Box";
 import Greetings from "../components/Greetings";
 import TimeLine from "../components/TimeLine";
+import Info from "../components/Info";
+import Detail from "../components/Detail";
 
 export default function Main() {
   return (
@@ -11,13 +13,10 @@ export default function Main() {
         <Greetings />
       </Box>
       <Box>
-        <TimeLine />
+        <Info />
       </Box>
       <Box>
-        <TimeLine />
-      </Box>
-      <Box>
-        <TimeLine />
+        <Detail />
       </Box>
       <Box>
         <TimeLine />
