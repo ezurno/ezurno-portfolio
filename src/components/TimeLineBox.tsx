@@ -22,16 +22,16 @@ export default function TimeLineBox({
     </React.Fragment>
   ));
   return (
-    <div className="mt-4 w-full flex flex-row xl:flex-col justify-between h-full pt-4 xl:pt-24 p-2 ml-2 border-yellow-500 border-l-4 rounded-full gap-8 xl:gap-0">
+    <div className="mt-4 w-full flex flex-col justify-between h-full pt-24 p-2 ml-2 border-yellow-500 border-l-4 rounded-full gap-0">
       <h2 className="font-semibold text-lg">{date}</h2>
-      <div className="xl:w-48 flex flex-row xl:flex-col gap-4 xl:gap-0">
+      <div className="w-48 flex flex-col gap-0">
         <div
-          className={`xl:w-48 xl:h-32 h-16 w-24 xl:inline-block bg-slate-500 object-cover bg-cover ${image}`}
+          className={`w-48 h-32 inline-block bg-slate-500 object-cover bg-cover ${image}`}
         />
-        <div className="xl:w-full mt-2 w-72">
+        <div className="w-full mt-2">
           <h2>{mainText}</h2>
           <p className="text-slate-500 text-sm">({regdate})</p>
-          <div className=" xl:inline-block mt-2 border-l-2 pl-4 border-gray-500">
+          <div className="inline-block mt-2 border-l-2 pl-4 border-gray-500">
             <p className="break-words">{paragraphElements}</p>
           </div>
         </div>

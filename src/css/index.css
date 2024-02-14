@@ -44,11 +44,5 @@ html {
 }
 
 section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   scroll-snap-align: center;
-  perspective: 500px;
 }

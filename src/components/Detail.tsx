@@ -12,7 +12,7 @@ export default function Detail() {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="h-full w-full tracking-tighter px-8 py-2 xl:px-24 gap-2 flex flex-col justify-start items-start"
+      className="h-full w-full tracking-tighter px-8 py-4 xl:px-24 gap-2 flex flex-col justify-start items-start"
     >
       <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-3xl">
         ABOUT ME #2
@@ -21,9 +21,7 @@ export default function Detail() {
         <div className="w-full flex-col">
           <div className="flex flex-col justify-start">
             <span className="bg-yellow-500 size-fit px-4 py-1 rounded-full">
-              <h2 className="font-bold text-base xl:text-base">
-                E D U C A T I O N
-              </h2>
+              <h2 className="font-bold text-base">E D U C A T I O N</h2>
             </span>
             <div className="flex flex-col">
               <div className="ml-12 mt-6 flex flex-row">
@@ -59,9 +57,7 @@ export default function Detail() {
 
           <div className="flex flex-col mt-8 justify-start">
             <span className="bg-yellow-500 size-fit px-4 py-1 rounded-full">
-              <h2 className="font-bold text-base xl:text-base">
-                C E R T I F I C A T E
-              </h2>
+              <h2 className="font-bold text-base">C E R T I F I C A T E</h2>
             </span>
             <div className="flex flex-col">
               <div className="ml-12 mt-6 flex flex-row">

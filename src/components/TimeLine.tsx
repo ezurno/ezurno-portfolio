@@ -14,7 +14,7 @@ export default function TimeLine() {
       y: 0,
       transition: { duration: 2, ease: "easeInOut", delay },
     }),
-    hidden: { opacity: 0 },
+    // hidden: { opacity: 0 },
   };
 
   return (
@@ -22,17 +22,17 @@ export default function TimeLine() {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="h-fit w-full tracking-tighter px-8 py-2 xl:px-24 gap-2 flex flex-col justify-start items-start"
+      className="w-full tracking-tighter px-8 py-4 xl:px-24 gap-2 flex flex-col justify-start items-start"
     >
-      <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-4xl">
+      <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-3xl">
         TIME LINE
       </h2>
 
-      <div className="w-2 h-[40rem] xl:w-full xl:h-2 rounded-full bg-yellow-500 mt-6 xl:mt-24 relative">
+      <div className="w-full h-2 rounded-full bg-yellow-500 mt-24 relative">
         <motion.div
           custom={1.0}
           variants={LineVariants}
-          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute top-0 xl:-top-2 xl:-bottom-2"
+          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute -top-2 -bottom-2"
         >
           <TimeLineBox
             date={"2019.07"}
@@ -45,7 +45,7 @@ export default function TimeLine() {
         <motion.div
           custom={2.0}
           variants={LineVariants}
-          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute top-40 xl:-top-2 xl:-bottom-2 xl:left-1/4"
+          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute -top-2 -bottom-2 left-1/4"
         >
           <TimeLineBox
             date={"2023.02"}
@@ -58,7 +58,7 @@ export default function TimeLine() {
         <motion.div
           custom={3.0}
           variants={LineVariants}
-          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute top-80 xl:-top-2 xl:-bottom-2 xl:left-2/4"
+          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute -top-2 -bottom-2 left-2/4"
         >
           <TimeLineBox
             date={"2023.07"}
@@ -73,7 +73,7 @@ export default function TimeLine() {
         <motion.div
           custom={4.0}
           variants={LineVariants}
-          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute top-[30rem] xl:-top-2 xl:-bottom-2 xl:left-3/4"
+          className="w-6 h-6 rounded-full border-4 bg-black border-yellow-500 absolute -top-2 -bottom-2 left-3/4"
         >
           <TimeLineBox
             date={"2023.12"}

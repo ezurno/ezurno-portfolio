@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export default function Greetings() {
+export default function Bye() {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: false,
@@ -37,7 +37,7 @@ export default function Greetings() {
       ref={ref}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
-      className="relative h-full w-full tracking-tighter px-8 py-8 xl:px-24 font-bold text-6xl gap-2 flex flex-row justify-between items-center"
+      className="relative h-full  flex flex-col justify-center items-center w-full tracking-tighter px-8 py-8 xl:px-24 font-bold text-6xl gap-2 "
     >
       <div className="relative z-20">
         <motion.h2
@@ -45,21 +45,7 @@ export default function Greetings() {
           variants={h2Variants}
           className="relative z-50 leading-tight"
         >
-          안녕하세요
-        </motion.h2>
-        <motion.h2
-          custom={2.5}
-          variants={h2Variants}
-          className="relative z-50 leading-tight"
-        >
-          프론트엔드 개발자
-        </motion.h2>
-        <motion.h2
-          custom={3.5}
-          variants={h2Variants}
-          className="relative z-50 leading-tight"
-        >
-          <span className="text-yellow-500">이 준 모</span> 입니다
+          감사합니다!
         </motion.h2>
 
         {/* <motion.div
@@ -88,12 +74,6 @@ export default function Greetings() {
           className="absolute z-0 inset-0 bg-blue-500 w-2 h-32 transform left-4 -top-28 -rotate-45"
         />
       </div>
-
-      <motion.div
-        custom={2.0}
-        variants={imageVariants}
-        className="bg-gray-500 h-full top-0 right-0 w-2/5 absolute bg-profile-image-2 object-cover bg-cover"
-      />
     </motion.div>
   );
 }
