@@ -24,14 +24,6 @@ export default function Bye() {
     // hidden: { opacity: 0 },
   };
 
-  const imageVariants = {
-    visible: (delay: number) => ({
-      opacity: 1,
-      transition: { duration: 2, ease: "easeInOut", delay },
-    }),
-    // hidden: { opacity: 0 },
-  };
-
   return (
     <motion.div
       ref={ref}
