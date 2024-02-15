@@ -1,19 +1,6 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
 export default function ProjectBSBZ() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  });
-
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="bg-amber-500 text-amber-950 h-full w-full tracking-tighter gap-2 flex flex-row-reverse justify-between items-start"
-    >
+    <div className="bg-amber-500 text-amber-950 h-full w-full tracking-tighter gap-2 flex flex-row-reverse justify-between items-start">
       <div className="flex flex-col gap-2 justify-start items-start pr-8 xl:pr-24 py-4">
         <h2 className="underline underline-offset-8 decoration-cyan-200 font-bold text-3xl">
           PROJECT #2.
@@ -143,6 +130,6 @@ export default function ProjectBSBZ() {
         }}
         className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] object-cover bg-cover bg-center shadow-2xl"
       ></div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,19 +1,6 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
 export default function Info() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  });
-
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="h-full w-full tracking-tighter py-4 px-8 xl:px-24 gap-2 flex flex-col justify-start items-start"
-    >
+    <div className="h-full w-full tracking-tighter py-4 px-8 xl:px-24 gap-2 flex flex-col justify-start items-start">
       <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-3xl">
         ABOUT ME #1
       </h2>
@@ -166,6 +153,6 @@ export default function Info() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,19 +1,6 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
 export default function ProjectTalk() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  });
-
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="bg-violet-900 text-violet-100 h-full w-full tracking-tighter gap-2 flex flex-row justify-between items-start"
-    >
+    <div className="bg-violet-900 text-violet-100 h-full w-full tracking-tighter gap-2 flex flex-row justify-between items-start">
       <div className="flex flex-col gap-2 justify-start items-start pl-8 xl:pl-24 py-4">
         <h2 className="underline underline-offset-8 decoration-yellow-500 font-bold text-3xl">
           PROJECT #1.
@@ -133,6 +120,6 @@ export default function ProjectTalk() {
         }}
         className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] object-cover bg-cover bg-center"
       ></div>
-    </motion.div>
+    </div>
   );
 }
