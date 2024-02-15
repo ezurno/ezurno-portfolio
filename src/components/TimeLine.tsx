@@ -36,7 +36,7 @@ export default function TimeLine() {
         >
           <TimeLineBox
             date={"2019.07"}
-            image={"bg-pol-image"}
+            image={"photo_pol.jpg"}
             regdate={"2017.11 ~ 2019.07"}
             mainText={"의무경찰 만기전역"}
             paragrah={"1093기 성동경찰서\n모범대원 수상"}
@@ -49,7 +49,7 @@ export default function TimeLine() {
         >
           <TimeLineBox
             date={"2023.02"}
-            image={"bg-seoil-image"}
+            image={"photo_seoil_2.jpg"}
             regdate={"2016.03 ~ 2023.02"}
             mainText={"서일대학교 학사 졸업"}
             paragrah={"컴퓨터 전자공학과\n4년제 학사 취득"}
@@ -62,7 +62,7 @@ export default function TimeLine() {
         >
           <TimeLineBox
             date={"2023.07"}
-            image={"bg-kb-image"}
+            image={"photo_kb.jpg"}
             regdate={"2023.07 ~ 2023.10"}
             mainText={"KB IT아카데미 4기"}
             paragrah={
@@ -77,7 +77,7 @@ export default function TimeLine() {
         >
           <TimeLineBox
             date={"2023.12"}
-            image={"bg-sqld-image"}
+            image={"photo_sqld.jpg"}
             regdate={"2023.12"}
             mainText={"SQLD 자격증 취득"}
             paragrah={

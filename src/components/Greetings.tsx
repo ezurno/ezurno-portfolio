@@ -92,7 +92,12 @@ export default function Greetings() {
       <motion.div
         custom={2.0}
         variants={imageVariants}
-        className="bg-gray-500 h-full top-0 right-0 w-2/5 absolute bg-profile-image-2 object-cover bg-cover"
+        className="bg-gray-500 h-full top-0 right-0 w-2/5 absolute object-cover bg-cover"
+        style={{
+          backgroundImage: `url(${
+            import.meta.env.VITE_BASE_PATH
+          }/photo_me.jpg)`,
+        }}
       />
     </motion.div>
   );

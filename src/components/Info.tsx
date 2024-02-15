@@ -19,7 +19,14 @@ export default function Info() {
       </h2>
       <div className="w-full h-full flex flex-row justify-between items-start pt-6">
         <div className="flex w-1/4 h-full flex-col justify-center items-center">
-          <div className="bg-gray-500 border-4 border-gray-900 h-60 w-48 bg-profile-image object-cover bg-cover rounded-3xl" />
+          <div
+            className="bg-gray-500 border-4 border-gray-900 h-60 w-48 object-cover bg-cover rounded-3xl"
+            style={{
+              backgroundImage: `url(${
+                import.meta.env.VITE_BASE_PATH
+              }/photo_ljm.jpg)`,
+            }}
+          />
           <div className="p-4 w-full">
             <h2 className="font-bold text-3xl mb-4 text-center">이 준 모</h2>
             <h2 className="text-base pl-6 text-slate-300"> - 1997.07.22</h2>
@@ -49,17 +56,38 @@ export default function Info() {
 
           <div className="flex flex-row gap-2 mt-2">
             <div className="bg-white flex flex-col w-1/3 h-40 pt-2 px-2 p-0">
-              <div className="bg-black w-full h-full bg-github-image object-cover bg-center bg-no-repeat bg-contain" />
+              <div
+                className="bg-black w-full h-full object-cover bg-center bg-no-repeat bg-contain"
+                style={{
+                  backgroundImage: `url(${
+                    import.meta.env.VITE_BASE_PATH
+                  }/photo_github.png)`,
+                }}
+              />
               <p className="text-black my-2 text-xs">@2023년도_GitHub_잔디</p>
             </div>
 
             <div className="bg-white flex flex-col w-1/3 h-40 pt-2 px-2 p-0">
-              <div className="bg-black w-full h-full bg-christ-image object-cover bg-cover" />
+              <div
+                className="bg-black w-full h-full object-cover bg-cover"
+                style={{
+                  backgroundImage: `url(${
+                    import.meta.env.VITE_BASE_PATH
+                  }/photo_christ.jpg)`,
+                }}
+              />
               <p className="text-black my-2 text-xs">@연말_KB_4기_송년회</p>
             </div>
 
             <div className="bg-white flex flex-col w-1/3 h-40 pt-2 px-2 p-0">
-              <div className="bg-black w-full h-full bg-alg-image object-cover bg-cover" />
+              <div
+                className="bg-black w-full h-full object-cover bg-cover"
+                style={{
+                  backgroundImage: `url(${
+                    import.meta.env.VITE_BASE_PATH
+                  }/photo_alg.png)`,
+                }}
+              />
               <p className="text-black my-2 text-xs">
                 @알고리즘_스터디_팀원들과
               </p>

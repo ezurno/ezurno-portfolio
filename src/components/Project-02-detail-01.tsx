@@ -29,16 +29,18 @@ export default function ProjectBSBZDetail01() {
         </div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-center items-center">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/WQcnG25WcMw"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="shadow-2xl"
-          ></iframe>
+          <a href="https://www.youtube.com/watch?v=WQcnG25WcMw">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/WQcnG25WcMw"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="shadow-2xl"
+            ></iframe>
+          </a>
         </div>
       </div>
     </motion.div>

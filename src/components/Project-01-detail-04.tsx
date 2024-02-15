@@ -34,7 +34,10 @@ export default function ProjectTalkDetail04() {
         </div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-between">
-          <img src="/talk/image-07.png" className="h-72 shadow-2xl" />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/talk/image-07.png`}
+            className="h-72 shadow-2xl"
+          />
         </div>
       </div>
     </motion.div>

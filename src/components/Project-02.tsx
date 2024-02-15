@@ -135,7 +135,14 @@ export default function ProjectBSBZ() {
         </div>
       </div>
 
-      <div className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] bg-mockup-image-2 object-cover bg-cover bg-center shadow-2xl"></div>
+      <div
+        style={{
+          backgroundImage: `url(${
+            import.meta.env.VITE_BASE_PATH
+          }/smartmockups.jpg)`,
+        }}
+        className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] object-cover bg-cover bg-center shadow-2xl"
+      ></div>
     </motion.div>
   );
 }

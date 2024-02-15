@@ -33,9 +33,18 @@ export default function ProjectTalkDetail01() {
         <div>회원 가입 및 로그인 후 프로필을 추가로 설정 할 수 있습니다.</div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-between">
-          <img src="/talk/image-09.png" className="w-72 shadow-2xl" />
-          <img src="/talk/image-01.png" className="w-72 shadow-2xl" />
-          <img src="/talk/image-08.png" className="w-72 shadow-2xl" />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/talk/image-09.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/talk/image-01.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/talk/image-08.png`}
+            className="w-72 shadow-2xl"
+          />
         </div>
       </div>
     </motion.div>

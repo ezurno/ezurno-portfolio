@@ -127,7 +127,12 @@ export default function ProjectTalk() {
         </div>
       </div>
 
-      <div className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] bg-mockup-image object-cover bg-cover bg-center"></div>
+      <div
+        style={{
+          backgroundImage: `url(${import.meta.env.VITE_BASE_PATH}/mockup.jpg)`,
+        }}
+        className="bg-gray-500 h-full top-0 right-0 w-[40rem] xl:w-[48rem] object-cover bg-cover bg-center"
+      ></div>
     </motion.div>
   );
 }

@@ -29,15 +29,33 @@ export default function ProjectBSBZDetail03() {
         </div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-between">
-          <img src="/bsbz/image-04.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-05.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-06.png" className="w-72 shadow-2xl" />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-04.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-05.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-06.png`}
+            className="w-72 shadow-2xl"
+          />
         </div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-between">
-          <img src="/bsbz/image-07.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-08.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-09.png" className="w-72 shadow-2xl" />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-07.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-08.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-09.png`}
+            className="w-72 shadow-2xl"
+          />
         </div>
       </div>
     </motion.div>

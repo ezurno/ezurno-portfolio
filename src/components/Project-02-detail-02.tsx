@@ -47,9 +47,18 @@ export default function ProjectBSBZDetail02() {
         </div>
 
         <div className="mt-12 flex flex-row gap-2 w-full justify-between">
-          <img src="/bsbz/image-01.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-02.png" className="w-72 shadow-2xl" />
-          <img src="/bsbz/image-03.png" className="w-72 shadow-2xl" />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-01.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-02.png`}
+            className="w-72 shadow-2xl"
+          />
+          <img
+            src={`${import.meta.env.VITE_BASE_PATH}/bsbz/image-03.png`}
+            className="w-72 shadow-2xl"
+          />
         </div>
       </div>
     </motion.div>

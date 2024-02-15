@@ -26,7 +26,10 @@ export default function TimeLineBox({
       <h2 className="font-semibold text-lg">{date}</h2>
       <div className="w-48 flex flex-col gap-0">
         <div
-          className={`w-48 h-32 inline-block bg-slate-500 object-cover bg-cover ${image}`}
+          className={`w-48 h-32 inline-block bg-slate-500 object-cover bg-cover`}
+          style={{
+            backgroundImage: `url(${import.meta.env.VITE_BASE_PATH}/${image})`,
+          }}
         />
         <div className="w-full mt-2">
           <h2>{mainText}</h2>
